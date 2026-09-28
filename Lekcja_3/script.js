@@ -19,8 +19,18 @@ function czyParzysta(a) {
 }
 
 function czyPierwsza(a) {
-    return (a % a === 0 && a % 1 === 0 && a > 1) ? "Tak" : "Nie";
+    let isPrime = true;
+    for (let i = 2; i <= a / 2; i++) {
+        if (a % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    return isPrime ? "Tak" : "Nie";
 }
+
+//https://podstawyjs.pl/javascript-liczba-pierwsza/
+
 
 const czyDodatnia = function (b) {
     return (b > 0) ? "Tak" : "Nie";
