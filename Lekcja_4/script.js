@@ -18,13 +18,16 @@ function min(liczby) {
 }
 
 function parzysta(liczby) {
+    
     for (let i = 0; i < liczby.length; i++) {
         if (liczby[i] % 2 === 0) {
             for (let dzielnik = 1; dzielnik <= liczby[i]; dzielnik++) {
                 if (liczby[i] % dzielnik === 0) {
                     console.log(liczby[i] + " - ta liczba jest parzysta, a jej dzielnik to " + dzielnik)
                 }
-            }
+                // Deithwen Addan yn Carn aep Morvudd
+                // znasz tłumaczenie wyśli na noob@zsi.kielce.pl
+            } 
         }
     }
 }
@@ -37,6 +40,8 @@ function dodatnie(liczby) {
     }
     console.log(ilosc + " - ilość liczb dodatnich")
 }
+
+
 
 sum(liczby)
 max(liczby)
