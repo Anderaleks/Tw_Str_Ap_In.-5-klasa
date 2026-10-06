@@ -77,20 +77,27 @@ function przestepny(rok) {
 
 let haslo = prompt("Podaj hasło:");
 
-function siła(haslo) {
-    switch (true) {
-        case haslo.length < 4:
-            console.log("hasło słabe");
-            break
-        case haslo.length < 8:
-            console.log("hasło średnie");
-            break
-        case haslo.length >= 8:
-             console.log("hasło mocne");
-             break
+function sila(haslo) {
+    let haveLower = haslo !== haslo.toUpperCase();
+    let haveUpper = haslo !== haslo.toLowerCase(); 
+
+    if (haveLower && haveUpper) {
+        switch (true) {
+            case haslo.length < 4:
+                console.log("hasło słabe");
+                break;
+            case haslo.length < 8:
+                console.log("hasło średnie");
+                break;
+            case haslo.length >= 8:
+                console.log("hasło mocne");
+                break;
+        }
+    } else {
+        console.log("Popraw hasło - musi zawierać małe i wielkie litery");
     }
-    
 }
+
 
 
 function trojakt(a, b, c) {
@@ -134,6 +141,6 @@ Wzrost(height)
 BMI(weight, height)
 starszy(age1, age2)
 przestepny(rok)
-siła(haslo)
+sila(haslo)
 trojakt(a, b, c)
 szyfr(tekst)
