@@ -1,0 +1,44 @@
+body {
+    background-color: #ffe3ec;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #4a2810;
+    padding: 20px;
+}
+
+button {
+    background-color: #ffe3ec;
+    text-align: center;
+    color: #4a2810;
+    padding: 20px;
+    border: none;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+img:active {
+    transform: scale(0.5);
+}
+
+input {
+    background-color: #ffe3ec;
+    color: #4a2810;
+    padding: 20px;
+    border: 2px dashed black;
+    border-radius: 5px;
+}
+
+input:active{
+    background-color: lightpink;
+}

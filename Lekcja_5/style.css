@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontener{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+
+div{
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+#first{
+    background-color: blue;
+}
+
+#second{
+    background-color: purple;
+}
+
+#third{
+    background-color: green;
+}
+
+#forth{
+    background-color: red;
+}
