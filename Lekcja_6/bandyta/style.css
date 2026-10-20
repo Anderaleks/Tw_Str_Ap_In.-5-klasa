@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16,16,68);
+}
+
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    width: 15vw;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 30vw;
+    height: 10vh;
+    margin-bottom: 4rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: green;
+    font-size: 4rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: rgb(20,196,20);
+}
+
+.saldo{
+    font-size: 4rem;
+    color: whitesmoke;
+    font-family: 'consolas';
+}
+
+.balance{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.buttons>input[type="button"]{
+    width: 10%;
+    height: 5vh;
+    background-color: green;
+    border: 25px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.buttons>input[type="button"]:active{
+    background-color:  rgb(20,196,20);
+}
